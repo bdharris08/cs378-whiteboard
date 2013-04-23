@@ -10,7 +10,8 @@
 
   io.sockets.on('connection', function(socket) {
     io.sockets.on('drawClick', function(data) {
-      io.sockets.broadcast.emit('draw', {
+      console.log("drawClick out");
+      socket.broadcast.emit('draw', {
         x: data.x,
         y: data.y,
         type: data.type
