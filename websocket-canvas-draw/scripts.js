@@ -11,7 +11,7 @@
 
   App.init = function() {
     App.canvas = document.createElement('canvas');
-    App.canvas.height = 400;
+    App.canvas.height = 520;
     App.canvas.width = 800;
     document.getElementsByTagName('article')[0].appendChild(App.canvas);
     App.ctx = App.canvas.getContext("2d");
@@ -20,9 +20,14 @@
     App.ctx.lineWidth = 4;
     App.ctx.lineCap = "round";
     App.socket = io.connect('http://cafebustelo.no-ip.biz:4000');
+
     App.socket.on('draw', function(data) {
       return App.draw(data.x, data.y, data.type);
     });
+    App.socket.on('clearCanvas', function() {
+      App.ctx.clearRect(0,0,App.canvas.width,App.canvas.height);
+    });
+
     App.draw = function(x, y, type) {
       if (type === "dragstart") {
         App.ctx.beginPath();
@@ -34,13 +39,13 @@
         return App.ctx.closePath();
       }
     };
+
+
   };
 
   /*
   	Draw Events
   */
-
-
   $('canvas').live('drag dragstart dragend', function(e) {
     var offset, type, x, y;
     type = e.handleObj.type;
@@ -60,5 +65,9 @@
   $(function() {
     return App.init();
   });
+
+  document.getElementById('push-button').onclick = function() {
+    App.socket.emit('clearClick');
+  };
 
 }).call(this);

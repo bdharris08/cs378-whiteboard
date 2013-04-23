@@ -1,34 +1,38 @@
+<!DOCTYPE HTML>
 <html>
 <head>
-<title>
-Login page
-</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" />
+	<title>Papyrus</title>
 </head>
-
 <body>
-<h1>
-Papyrus Login Page
-</h1>
-    
-<form name="login" form method="post">
-Username<input type="text" name="userid"/>
-Password<input type="password" name="pswrd"/>
-<input type="button" onclick="check(this.form)" value="Login"/>
-</form>
-    
-<script language="javascript">
-function check(form){
-    if(form.userid.value == "test" && form.pswrd.value == "test")
-		location.href = "canvas.html";
-    else
-    	alert("Incorrect Username or Password.")
-}
-</script>
-    
+<table>
+  <tr>
+    <td>
+      <div id="myBoard">
+        <article><!-- Canvas --></article>
+      </div>
+    </td>
+    <td>
+      <div id="slide-list-container">
+        <div id="slide-list">test</div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    </td>
+    <td>
+      <button id="push-button">Clear</button>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/jquery.event.drag-2.0.js"></script>
+	<script src="http://192.168.1.100:4000/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+  <script type="text/javascript"> document.ontouchmove = function(e) {e.preventDefault()}; </script>
 </body>
 </html>
-
-<!-- Code copied from: 
-http://www.daniweb.com/web-development/javascript-dhtml-ajax/code/330933/a-simple-html-login-page-using-javascript# -->
-
-
