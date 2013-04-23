@@ -6,7 +6,7 @@ App = {}
 ###
 App.init = -> 
 	App.canvas = document.createElement 'canvas' #create the canvas element 
-	App.canvas.height = 400
+	App.canvas.height = 520
 	App.canvas.width = 800  #size it up
 	document.getElementsByTagName('article')[0].appendChild(App.canvas) #append it into the DOM 
 	
@@ -19,7 +19,7 @@ App.init = ->
 	App.ctx.lineCap = "round"
 		
 	# Sockets!
-	App.socket = io.connect('http://cafebustelo.no-ip.biz:4000')
+	App.socket = io.connect('http://localhost:4000')
 	
 	App.socket.on 'draw', (data) ->
 		App.draw(data.x,data.y,data.type)
