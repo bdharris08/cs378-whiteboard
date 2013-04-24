@@ -16,7 +16,7 @@
     document.getElementsByTagName('article')[0].appendChild(App.canvas);
     App.ctx = App.canvas.getContext("2d");
     App.ctx.fillStyle = "solid";
-    App.ctx.strokeStyle = "#ECD018";
+    App.ctx.strokeStyle = "#C0C0C0";
     App.ctx.lineWidth = 4;
     App.ctx.lineCap = "round";
     App.socket = io.connect('http://cafebustelo.no-ip.biz:4000');

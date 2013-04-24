@@ -2,22 +2,40 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.event.drag-2.0.js"></script>
-        <!--        
-	<script src="http://cafebustelo.no-ip.biz:4000/socket.io/socket.io.js"></script>
-	<script type="text/javascript" src="scripts.js"></script>
-         --!>
 	<link rel="stylesheet" href="style.css" />
-
-	<title>HTML5 Canvas + Node.JS Socket.io</title>
+	<title>Papyrus</title>
 </head>
 <body>
-	<article><!-- our canvas will be inserted here--></article>
-	<!-- Scripts required -->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<table>
+  <tr>
+    <td>
+      <div id="myBoard">
+        <article><!-- Canvas --></article>
+      </div>
+    </td>
+    <td>
+      <div id="slide-list-container">
+        <div id="slide-list">test</div>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    </td>
+    <td>
+      <button id="push-button">Clear</button>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <!--<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
+  <!--<script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>-->
 	<script type="text/javascript" src="js/jquery.event.drag-2.0.js"></script>
+  <!--<script type="text/javascript" src="js/jquery.ui.mouse.js"></script>-->
+  <!--<script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script>-->
 	<script src="http://cafebustelo.no-ip.biz:4000/socket.io/socket.io.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
+  <script type="text/javascript"> document.ontouchmove = function(e) {e.preventDefault()}; </script>
 </body>
-
+</html>

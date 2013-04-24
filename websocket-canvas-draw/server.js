@@ -8,7 +8,7 @@
   db.run("CREATE TABLE slide (x REAL, y REAL, type TEXT, clear INT)", function() {
     var clearStmt = db.prepare("INSERT INTO slide VALUES (0, 0, ' ', 1)");
     var drawStmt = db.prepare("INSERT INTO slide VALUES (?, ?, ?, 0)");
-    
+ 
     connect.createServer(
       connect.static(__dirname)
     ).listen(8080);
