@@ -43,26 +43,35 @@ html[xmlns] .clearfix{
   height:1%;
 }
 
+#clean-table{
+  margin: 0px;
+  padding: 0px;
+}
 #slide-list-container{
-	border: 20px solid #633002;
+	border: 0px;
  	display: inline-block;
   overflow:auto;
   margin: 0px;
+  width:125px;
+  height:600px;
 }
-#slide-list{
-  width:200;
-  height:520px;
- 	display: block;
-  margin: 0px;
-}
+
 #myBoard{
-	border: 20px solid #633002;
+	border: 0px;
 	display: inline-block;
 	margin: 0px;
 }
+#myOverlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 900x;
+  height: 600px;
+  z-index: 2;
+}
 
 body {
-	background: #c76004;
+	background: #633002;
 }
 	
 	

@@ -6,33 +6,80 @@
 	<title>Papyrus</title>
 </head>
 <body>
-<table>
+<table id="clean-table">
   <tr>
     <td>
       <div id="myBoard">
-        <article><!-- Canvas --></article>
+        <div id="myOverlay"></div>
+        <div style='z-index=-63'>
+          <article><!-- Canvas --></article>
+        </div>
       </div>
     </td>
     <td>
       <div id="slide-list-container">
-        <div id="slide-list">test</div>
+        <table id="clean-table">
+          <tr><td>
+            <button id="Slide1-button">Slide 1</button>
+          </td></tr>
+          <tr><td>
+            <button id="Slide2-button">Slide 2</button>
+          </td></tr>
+          <tr><td>
+            <button id="Slide3-button">Slide 2</button>
+          </td></tr>
+        </table>
       </div>
     </td>
   </tr>
   <tr>
     <td>
+      <table id="clean-table">
+        <tr>
+          <td>
+            <button id="thicker-button">+</button>
+          </td>
+          <td id="tickness-value">5
+          </td>
+          <td>
+            <button id="thinner-button">-</button>
+          </td>
+          <td>
+            <button id="yellow-button">Yellow</button>
+          </td>
+          <td>
+            <button id="white-button">White</button>
+          </td>
+          <td>
+            <button id="erase-button">Eraser</button>
+          </td>
+          <td>
+            <button id="line-button">Line</button>
+          </td>
+          <td>
+            <button id="new-text-button">New Text</button>
+          </td>
+          <td>
+            <button id="save-text-button">Save Text</button>
+          </td>
+          <td>
+            <button id="cancel-text-button">Cancel Text</button>
+          </td>
+          <td>
+            <button id="clear-button">Clear all</button>
+          </td>
+        </tr>
+      </table>
     </td>
     <td>
-      <button id="push-button">Clear</button>
+      <button id="New-button">New Slide</button>
     </td>
   </tr>
 </table>
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.event.drag-2.0.js"></script>
-	<script src="http://192.168.1.100:4000/socket.io/socket.io.js"></script>
+	<script src="http://cafebustelo.no-ip.biz:4000/socket.io/socket.io.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
-  <script type="text/javascript"> document.ontouchmove = function(e) {e.preventDefault()}; </script>
 </body>
 </html>
