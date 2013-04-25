@@ -29,6 +29,7 @@
     
     App.ctx = App.canvas.getContext("2d");
     App.ctx.fillStyle = "solid";
+
     App.ctx.strokeStyle = App.MyColor;
     App.ctx.lineWidth = App.MyWidth;
     var s = ((App.ctx.lineWidth<10)?'0':'')+App.ctx.lineWidth;
