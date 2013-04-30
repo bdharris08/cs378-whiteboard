@@ -1,0 +1,34 @@
+/** IMAGE BORDER STYLE 1 */
+
+.image-style1 {
+	position: relative;
+	width: 630px;
+	height: 210px;
+	margin-left: 0px;
+}
+
+.image-style1 img {
+	top: 10px;
+	left: 10px;
+}
+
+.image-style1a span {
+	background: url(images/bg3_01.gif) no-repeat left top;
+}
+
+/** IMAGE BORDER STYLE 2 */
+
+.image-style2 {
+	width: 136px;
+	height: 147px;
+	margin-top: 7px;
+}
+
+.image-style2 img {
+	top: 10px;
+	left: 10px;
+}
+
+.image-style2a span {
+	background: url(images/bg3_02.gif) no-repeat left top;
+}

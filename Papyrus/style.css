@@ -1,0 +1,110 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	background: #1C0801 url(images/bg1_01.gif) repeat;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #82736E;
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+  border:0;
+  font-size:100%;
+  vertical-align:baseline;
+  margin:0;
+  padding:0;
+}
+
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+  display:block;
+}
+body{
+  line-height:1;
+}
+ol,ul{list-style:none;
+}
+blockquote,q{
+  quotes:none;
+}
+blockquote:before,blockquote:after,q:before,q:after{
+  content:none;
+}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+.clearfix:after{
+  content:".";
+  display:block;
+  clear:both;
+  visibility:hidden;
+  line-height:0;
+  height:0;
+}
+.clearfix{
+  display:inline-block;
+}
+html[xmlns] .clearfix{
+  display:block;
+}
+* html .clearfix{
+  height:1%;
+}
+
+#clean-table{
+  margin: 0px;
+  padding: 0px;
+}
+#slide-list-container{
+	border: 0px;
+ 	display: inline-block;
+  overflow:auto;
+  margin: 0px;
+  width:125px;
+  height:600px;
+}
+
+#myBoard{
+	border: 0px;
+	display: inline-block;
+	margin: 0px;
+}
+#myOverlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 900x;
+  height: 600px;
+  z-index: 2;
+}
+
+#logo {
+	float: right;
+	width: 150px;
+	height: 100px;
+	background: url(images/homepage02.jpg) no-repeat left top;
+}
+
+
+
+#logo h1 a {
+	display: block;
+	padding-top: 50px;
+	letter-spacing: -3px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #FBF9F6;
+	font-size: 36px;
+	font-weight: normal;
+	color: #441504;
+}
+	
+	
+canvas {
+	background: #000;
+	display: block;
+}

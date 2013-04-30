@@ -1,0 +1,428 @@
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #1C0801 url(images/bg1_01.gif) repeat;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #82736E;
+}
+
+h1, h2, h3 {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Bitter', serif;
+}
+
+p, ol, ul {
+	margin-top: 0px;
+}
+
+p, ol {
+	line-height: 190%;
+}
+
+strong {
+	color: #584741;
+}
+
+a {
+	color: #4A6D1C;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a img {
+	border: none;
+}
+
+img.border {
+}
+
+img.alignleft {
+	float: left;
+}
+
+img.alignright {
+	float: right;
+}
+
+img.aligncenter {
+	margin: 0px auto;
+}
+
+hr {
+	display: none;
+}
+
+/** WRAPPER */
+
+#wrapper {
+	overflow: hidden;
+	background: url(images/bg1_02.jpg) no-repeat center top;
+}
+
+.container {
+	width: 930px;
+	margin: 0px auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/** HEADER */
+
+#header {
+}
+
+/** LOGO */
+
+#logo {
+	float: left;
+	width: 230px;
+	height: 135px;
+	background: url(images/homepage02.jpg) no-repeat left top;
+}
+
+#logo h1, #logo p {
+	margin: 0px;
+	line-height: normal;
+}
+
+#logo h1 a {
+	display: block;
+	padding-top: 50px;
+	letter-spacing: -3px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #FBF9F6;
+	font-size: 36px;
+	font-weight: normal;
+	color: #441504;
+}
+
+/** MENU */
+
+#menu {
+	width: 230px;
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+}
+
+#menu a {
+	height: 56px;
+	line-height: 56px;
+	letter-spacing: -1px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Bitter', serif;
+	font-size: 20px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	text-decoration: none;
+}
+
+#menu1 {
+	display: inline-block;
+	width: 230px;
+	height: 56px;
+	background: url(images/homepage03.jpg) no-repeat left top;
+	text-shadow: 1px 1px 1px #3E5D16;
+}
+
+#menu2 {
+	display: inline-block;
+	width: 230px;
+	height: 56px;
+	background: url(images/homepage04.jpg) no-repeat left top;
+	text-shadow: 1px 1px 1px #346A59;
+}
+
+#menu3 {
+	display: inline-block;
+	width: 230px;
+	height: 56px;
+	background: url(images/homepage05.jpg) no-repeat left top;
+	text-shadow: 1px 1px 1px #447A93;
+}
+
+#menu4 {
+	display: inline-block;
+	width: 230px;
+	height: 56px;
+	background: url(images/homepage06.jpg) no-repeat left top;
+	text-shadow: 1px 1px 1px #CA5126;
+}
+
+#menu5 {
+	display: inline-block;
+	width: 230px;
+	height: 56px;
+	background: url(images/homepage07.jpg) no-repeat left top;
+	text-shadow: 1px 1px 1px #C12333;
+}
+
+#menu6 {
+	display: inline-block;
+	width: 230px;
+	height: 56px;
+	background: url(images/homepage08.jpg) no-repeat left top;
+	text-shadow: 1px 1px 1px #9A2954;
+}
+
+/** PAGE */
+
+#page {
+	overflow: hidden;
+}
+
+/** CONTENT */
+
+#content {
+	float: right;
+	width: 700px;
+}
+
+.two-column #content-bgbtm {
+	padding-top: 197px;
+}
+
+#content-bg {
+	overflow: hidden;
+	background: url(images/bg2_02.jpg) repeat-y left top;
+}
+
+#content-bgtop {
+	background: url(images/bg2_01.jpg) no-repeat left top;
+}
+
+#content-bgbtm {
+	overflow: hidden;
+	padding: 177px 50px 30px 20px;
+	background: url(images/bg2_03.jpg) no-repeat left bottom;
+}
+
+/** SIDEBAR */
+
+#sidebar {
+	float: left;
+	width: 230px;
+}
+
+#sidebar-bgtop {
+	background: url(images/homepage01.jpg) no-repeat left top;
+}
+
+#sidebar-bgbtm {
+	overflow: hidden;
+	padding-top: 177px;
+	padding-bottom: 127px;
+	background: url(images/homepage09.jpg) no-repeat left bottom;
+}
+
+/** FOOTER */
+
+#footer {
+	height: 168px;
+	background: url(images/bg2_07.jpg) no-repeat left top;
+}
+
+#footer p {
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	line-height: 56px;
+	text-align: center;
+	color: #3B1F16;
+}
+
+/** FOOTER CONTENT */
+
+#footer-contentbg {
+	overflow: hidden;
+	background: url(images/bg2_05.jpg) repeat-y left top;
+}
+
+#footer-contentbgtop {
+	background: url(images/bg2_04.jpg) no-repeat left top;
+}
+
+#footer-contentbgbtm {
+	overflow: hidden;
+	padding: 40px 60px 30px 30px;
+	background: url(images/bg2_06.jpg) no-repeat left bottom;
+}
+
+#footer-content {
+}
+
+#footer-content h2 {
+	padding-bottom: 15px;
+	letter-spacing: -1px;
+	text-shadow: 1px 1px 1px #220F0A;
+	font-size: 22px;
+	font-weight: normal;
+	color: #C6A79E;
+}
+
+#footer-content #column1 {
+	float: left;
+	width: 275px;
+}
+
+#footer-content #column2 {
+	float: right;
+	width: 275px;
+}
+
+/** BOX 1 */
+
+#box1 {
+	overflow: hidden;
+	margin-bottom: 20px;
+	padding: 0px 10px;
+}
+
+/** BOX 2 */
+
+#box2 {
+	padding: 0px 10px;
+}
+
+/** BOX 3 */
+
+#box3 {
+	padding: 0px 10px;
+}
+
+/** LIST STYLE 1 */
+
+ul.style1 {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+ul.style1 li {
+	padding: 8px 0px 10px 0px;
+	background: url(images/homepage12.gif) repeat-x left top;
+}
+
+ul.style1 a {
+	color: #714E43;
+}
+
+ul.style1 .first {
+	padding-top: 0px;
+	background: none;
+}
+
+/** BOX STYLE 1 */
+
+.box-style1 {
+}
+
+.box-style1 .title {
+	padding-bottom: 15px;
+	letter-spacing: -3px;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #FBF9F6;
+	font-size: 30px;
+	font-weight: normal;
+	color: #441504;
+}
+
+/** BOX STYLE 2 */
+
+.box-style2 {
+}
+
+.box-style2 .title {
+	padding-top: 8px;
+	padding-bottom: 15px;
+	letter-spacing: -2px;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #FBF9F6;
+	font-size: 22px;
+	font-weight: normal;
+	color: #441504;
+}
+
+/** BANNER */
+
+#banner {
+	margin-bottom: 30px;
+}
+
+/** IMAGE BORDER STYLE 1 */
+
+.image-style1 {
+	position: relative;
+	width: 636px;
+	height: 215px;
+	margin-left: -3px;
+}
+
+.image-style1 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.image-style1 img {
+	position: absolute;
+	top: 11px;
+	left: 13px;
+}
+
+.image-style1a span {
+	background: url(images/bg3_01.png) no-repeat left top;
+}
+
+/** IMAGE BORDER STYLE 2 */
+
+.image-style2 {
+	position: relative;
+	float: left;
+	width: 142px;
+	height: 152px;
+	margin-right: 25px;
+}
+
+.image-style2 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.image-style2 img {
+	position: absolute;
+	top: 11px;
+	left: 13px;
+}
+
+.image-style2a span {
+	background: url(images/bg3_02.png) no-repeat left top;
+}
+
